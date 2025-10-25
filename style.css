@@ -105,13 +105,13 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 6px;
-  background-color: #2563eb;
+  background-color: #60a5fa;
   color: white;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #1e40af;
+  background-color: #4e90e0;
 }
 
 /* Simple modal overlay */
@@ -163,7 +163,13 @@ button:hover {
   background-color: #60a5fa;
   color: white;
 }
-
+/* take photo and upload photo hover*/
+#takePhotoBtn:hover {
+  background-color: #4e90e0;
+}
+#uploadPhotoBtn:hover {
+  background-color: #4e90e0;
+}
 .close {
   background-color: #f87171;
   color: white;
