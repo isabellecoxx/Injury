@@ -16,7 +16,7 @@ body {
   background-color: #bae6fd;
   border-radius: 12px;
   padding: 20px;
-  width: 80%;               /* responsive width */
+  width: 70%;               /* responsive width */
   max-width: 400px;         /* typical phone width */
   text-align: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
