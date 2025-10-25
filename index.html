@@ -36,35 +36,41 @@
 
     <!-- Image preview -->
     <img id="preview" class="camera" alt="Preview" />
-    <p id="output"></p>
 
-    <p id="loading" style="display:none">
-      Analyzing...
-    </p>
+    <p id="loading" style="display:none; color: #8B8D8B;">Analyzing...</p>
 
-    <!-- Results -->
-    <div id="results">
-      <div class="result-item"><h4>Injury</h4><p id="injury">-</p></div>
-      <div class="result-item"><h4>Procedures</h4><p id="procedures">-</p></div>
-      <div class="result-item"><h4>Pricing</h4><p id="pricing">-</p></div>
+    <!-- TREATMENT PLAN BOX -->
+    <div id="treatmentPlan" class="treatment-plan">
+      <div class="result-item">
+        <h4>Injury</h4>
+        <p id="injury">-</p>
+      </div>
+      <div class="result-item">
+        <h4>Procedures</h4>
+        <p id="procedures">-</p>
+      </div>
+      <div class="result-item">
+        <h4>Pricing</h4>
+        <p id="pricing">-</p>
+      </div>
     </div>
 
   </div>
-  <div class = "box-2">
+  <!-- <div class="box-2" id="resultsBox">
     <h1>Results</h1>
-    <div class = "results">
+    <div class="results">
       <h4>Injury</h4>
-      <p>Knee Scrape</p>
+      <p id="injury">-</p>
     </div>
     <div class="results">
       <h4>Procedures</h4>
-      <p>Bandaid</p>
+      <p id="procedures">-</p>
     </div>
     <div class="results">
       <h4>Pricing</h4>
-      <p>$2</p>
+      <p id="pricing">-</p>
     </div>
-  </div>
+  </div> -->
 
   <script src="script.js"></script>
 </body>
