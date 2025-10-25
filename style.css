@@ -27,15 +27,10 @@ body {
   height: 300px;
   object-fit: cover;
   border-radius: 10px;
-  border: 2px solid #2563eb;
+  border: 2px solid #ffffff;
   margin-top: 15px;
   display: none; /* hidden initially */
 }
-
-/* #results {
-  display: none; 
-  margin-top: 20px;
-} */
 
 #results {
   display: none;          /* hide initially */
@@ -60,45 +55,21 @@ body {
   background-color: #bae6fd;
   border-radius: 12px;
   padding: 20px;
-  width: 90%;               /* make boxes responsive */
-  max-width: 400px;         /* typical iPhone width cap */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transform: scale(0.9);
+  transition: opacity 0.8s ease, transform 0.8s ease;
   color: #6363638a;
 }
 
 .box-2.show {
   display: block;
   opacity: 1;
+  transform: scale(1);
 }
 
-/* .results{
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 10px;
-} */
-
-/* .camera {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  border-radius: 10px;
-  margin-top: 15px;
-} */
-
-/* .camera {
-  width: 300px;        
-  height: 300px;   
-  object-fit: cover;  
-  border-radius: 10px;
-  margin-top: 15px;
-  border: 2px solid #2563eb;
-} */
 
 
 button {
@@ -182,5 +153,52 @@ button:hover {
   object-fit: cover;
   border-radius: 10px;
   margin: 15px auto 0 auto; /* top margin + auto left/right */
-  border: 2px solid #2563eb;
+  border: 2px solid #4e90e0;
+}
+
+.results-container {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.8s ease, max-height 0.8s ease;
+  margin-top: 20px;
+}
+
+.results-container.show {
+  opacity: 1;
+  max-height: 500px; /* large enough to fit content */
+}
+
+.treatment-plan {
+  background-color: #a0cde6; /* slightly different from box-1 */
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.8s ease, max-height 0.8s ease;
+}
+
+.treatment-plan.show {
+  opacity: 1;
+  max-height: 500px; /* enough to fit content */
+}
+.result-item {
+  display: flex;
+  justify-content: space-between; /* headers left, result right */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.result-item h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #8B8D8B
+}
+
+.result-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #8B8D8B
 }
