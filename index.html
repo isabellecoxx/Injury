@@ -9,7 +9,7 @@
 <body class="home-page">
   <div class = "box-1">
     <h1>Injury Detection</h1>
-    <button id="submitInjury">Submit Injury</button>
+    <button id="submitInjury">Upload Photo</button>
 
     <!-- Hidden file inputs -->
     <input type="file" id="uploadInput" accept="image/*" style="display:none" />
@@ -20,8 +20,15 @@
       <div class="modal-content">
         <h3>Choose an option</h3>
         <div class="modal-buttons">
-          <button id="takePhotoBtn">📸 Take Photo</button>
-          <button id="uploadPhotoBtn">🖼 Upload Image</button>
+          <!-- <button id="takePhotoBtn">📸 Take Photo</button> -->
+          <button id="takePhotoBtn">
+            <img src="cam.png" alt="Camera Icon" style="width:20px; height:20px; vertical-align:middle; margin-right:8px;" />
+            Take Photo
+          </button>
+          <button id="uploadPhotoBtn">
+            <img src="photo.png" alt="Upload Icon" style="width:20px; height:20px; vertical-align:middle; margin-right:8px;" />
+            Upload Image
+          </button>
         </div>
         <button id="closeModal" class="close">Cancel</button>
       </div>
@@ -31,7 +38,9 @@
     <img id="preview" class="camera" alt="Preview" />
     <p id="output"></p>
 
-    <p id="loading" style="display:none">Analyzing...</p>
+    <p id="loading" style="display:none">
+      Analyzing...
+    </p>
 
     <!-- Results -->
     <div id="results">
