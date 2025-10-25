@@ -1,0 +1,142 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: #f3f4f6;
+}
+
+.home-page {
+  background-color: #e0f2fe;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 70px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+}
+
+.box-1 {
+  background-color: #bae6fd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;               /* make boxes responsive */
+  max-width: 400px;         /* typical iPhone width cap */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-2 {
+  background-color: #bae6fd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;               /* make boxes responsive */
+  max-width: 400px;         /* typical iPhone width cap */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+/* .camera {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 15px;
+} */
+
+.camera {
+  width: 300px;        /* fixed width */
+  height: 300px;       /* fixed height */
+  object-fit: cover;   /* crop or scale image to fit */
+  border-radius: 10px;
+  margin-top: 15px;
+  border: 2px solid #2563eb;
+}
+
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+/* Simple modal overlay */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content box */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 80%;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Button layout inside modal */
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.modal button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#takePhotoBtn {
+  background-color: #2563eb;
+  color: white;
+}
+
+#uploadPhotoBtn {
+  background-color: #60a5fa;
+  color: white;
+}
+
+.close {
+  background-color: #f87171;
+  color: white;
+  margin-top: 15px;
+}
+#preview {
+  display: none; /* hide by default */
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 15px auto 0 auto; /* top margin + auto left/right */
+  border: 2px solid #2563eb;
+}
